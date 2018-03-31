@@ -1,0 +1,6 @@
+assets/**
+WhatToDo.md
+
+.idea/**
+node_modules/**
+

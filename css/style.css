@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: lightgrey;
+}
+
+#app {
+    margin: 0 auto
+}
