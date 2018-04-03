@@ -1,15 +1,12 @@
 
-function zoomIn(){
-    camera.setZoom(2);
-}
+function follow(){
+    this.cameras.main.startFollow(player);
+};
 
-function zoomOut(){
-    camera.setZoom(0.5);
-}
 
-function resetCamera(){
-    camera.setZoom(1);
-}
+function unfollow(){
+    this.cameras.main.stopFollow(player);
+};
 
 function loadSettings(callback, context){
 
@@ -26,8 +23,13 @@ function loadSettings(callback, context){
 }
 
 function setup(){
-    this.cameras.main.startFollow(player);
-    this.cameras.main.setBounds(this.physics.world.bounds);
+    //this.cameras.main.startFollow(player);
+    this.cameras.main.setBounds(0, 0, 1800, 800);
+
+    this.cameras.main.setZoom(1.2);
+
+
+
 
 
     var lambda = function mapControls(response, context) {
@@ -46,16 +48,16 @@ function setup(){
         var controlConfig = {
 
             camera: context.cameras.main,
-            //up: context.input.keyboard.addKey(eval(up_key)),
-            up: context.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.B),
+            up: context.input.keyboard.addKey(eval(up_key)),
             left: context.input.keyboard.addKey(eval(left_key)),
             right: context.input.keyboard.addKey(eval(right_key)),
             down: context.input.keyboard.addKey(eval(down_key)),
             zoomIn: context.input.keyboard.addKey(eval(zoom_In)),
             zoomOut: context.input.keyboard.addKey(eval(zoom_Out)),
-            acceleration: 0.00,
+            zoomSpeed: 0.005,
+            acceleration: 0.30,
             drag: 0.0005,
-            maxSpeed: 0.5
+            maxSpeed: 0.30  // same as acceleration
         };
        controls = new Phaser.Cameras.Controls.Smoothed(controlConfig);
        CAMERA_FLAG = true;
