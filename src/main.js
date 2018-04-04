@@ -1,10 +1,5 @@
- var controls;
-
-//FLAG
-var CAMERA_FLAG = false;
 
 function main() {
-
 
     var config = {
         type: Phaser.AUTO,
@@ -166,7 +161,8 @@ function main() {
         cursors = this.input.keyboard.createCursorKeys();
 
         //camera
-        setup.call(this);
+        camera = new cameraHandler(this);
+        camera.init();
 
     }
 
@@ -190,8 +186,8 @@ function main() {
             player.anims.play('stand');
         }
 
-        if(CAMERA_FLAG === true){
-            controls.update(delta);
+        if(camera.controls){
+            camera.controls.update(delta);
         }
 
         window.onresize = function ()
