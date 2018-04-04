@@ -45,7 +45,7 @@ function main() {
 		
 		 this.load.image('amaro', 'assets/1260x765/objects/amaro.png')
 		 this.load.image('8ball', 'assets/1260x765/objects/8ball.png');
-       this.load.image('banana', 'assets/1260x765/objects/banana.png')
+         this.load.image('banana', 'assets/1260x765/objects/banana.png')
 		 this.load.image('beer', 'assets/1260x765/objects/beer.png');
 		 this.load.image('filo', 'assets/1260x765/objects/filo.png')
 		 this.load.image('forbici_cut', 'assets/1260x765/objects/forbici_cut.png');
