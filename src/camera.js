@@ -1,20 +1,17 @@
-
 function cameraHandler(game){
     return {
-
         camera: game.cameras.main,
-        input: game.input,
+        input: game.input.keyboard,
         controls: false,
         path: 'src/settings/keyboard.json',
 
         follow: function(actor) {
-            this.camera, startFollow(actor)
+            this.camera.startFollow(actor)
         },
         unfollow: function(actor) {
             this.camera.stopFollow(actor);
         },
         loadConfig: function(){
-
             var request = new XMLHttpRequest();
             var context = this;
 
@@ -36,7 +33,6 @@ function cameraHandler(game){
 }
 
 function mapControls (context, response){
-
     var fun = 'Phaser.Input.Keyboard.KeyCodes.';
 
     var up_key = fun + response.camera_Up;
@@ -48,12 +44,12 @@ function mapControls (context, response){
 
     var config = {
         camera:     context.camera,
-        up:         context.input.keyboard.addKey(eval(up_key)),
-        left:       context.input.keyboard.addKey(eval(left_key)),
-        right:      context.input.keyboard.addKey(eval(right_key)),
-        down:       context.input.keyboard.addKey(eval(down_key)),
-        zoomIn:     context.input.keyboard.addKey(eval(zoom_In)),
-        zoomOut:    context.input.keyboard.addKey(eval(zoom_Out)),
+        up:         context.input.addKey(eval(up_key)),
+        left:       context.input.addKey(eval(left_key)),
+        right:      context.input.addKey(eval(right_key)),
+        down:       context.input.addKey(eval(down_key)),
+        zoomIn:     context.input.addKey(eval(zoom_In)),
+        zoomOut:    context.input.addKey(eval(zoom_Out)),
         zoomSpeed:  0.005,
         acceleration: 0.30,
         drag:       0.0005,

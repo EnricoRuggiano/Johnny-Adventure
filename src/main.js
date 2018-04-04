@@ -1,4 +1,3 @@
-
 function main() {
 
     var config = {
@@ -194,6 +193,5 @@ function main() {
         {
             game.renderer.resize(window.innerWidth, window.innerHeight, 1.0);
         }
-
     }
 }
