@@ -25,8 +25,6 @@ function main() {
 
         AnimationRegistry(this);
 
-        //score
-        scoreText = this.add.text(32, 32, 'Score 0', {fontsize: '32px', fill: "#FFFFFF"});
 
         //keyboard
         keyboardHandler = new KeyboardHandler(this);
@@ -38,13 +36,23 @@ function main() {
         //camera
         cameraHandler = new cameraHandler(this);
         cameraHandler.init();
+
+        //score
+        scoreText = this.add.text(cameraHandler.camera.x, cameraHandler.camera.y, 'Score',
+            {
+                fontFamily: 'Verdana',
+                fontWeight: 'bold',
+                fontSize: '24px',
+                fill: "#64FF2B",
+                backgroundColor: '#0F0F0F'
+
+            }).setScrollFactor(0);
     }
 
     function update(time, delta) {
 
         // update camera
         cameraHandler.controls.update(delta);
-
             window.onresize = function ()
         {
             game.renderer.resize(window.innerWidth, window.innerHeight, 1.0);
