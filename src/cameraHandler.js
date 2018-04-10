@@ -15,7 +15,7 @@ function cameraHandler(game){
             maxSpeed:   0.20  // same as acceleration
         }),
         init: function(){
-            this.camera.setBounds(0, 0, 1800, 800);
+            this.camera.setBounds(0, 0, 2020, 890);
             this.camera.startFollow(world.player.sprite);
 
             var cameraHandler = this;

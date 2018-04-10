@@ -19,7 +19,6 @@ function main() {
 
     var game = new Phaser.Game(config);
     var score = 0;
-    var scoreText;
 
     function create() {
 
@@ -37,6 +36,10 @@ function main() {
         cameraHandler = new cameraHandler(this);
         cameraHandler.init();
 
+        //hud
+        hud = new Hud(this);
+        hud.init(this);
+
         //score
         scoreText = this.add.text(cameraHandler.camera.x, cameraHandler.camera.y, 'Score',
             {
@@ -47,6 +50,7 @@ function main() {
                 backgroundColor: '#0F0F0F'
 
             }).setScrollFactor(0);
+
     }
 
     function update(time, delta) {

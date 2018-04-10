@@ -6,6 +6,7 @@ function Scenario(game){
         banana:     game.add.image(1590, 202.56, 'banana').setInteractive().setOrigin(0, 0),
         beer:       game.add.image(817.61, 341.28, 'beer').setInteractive().setOrigin(0, 0),
         filo:       game.add.image(158.01, 239, 'filo').setInteractive().setOrigin(0, 0),
+        table:      null,
         scissors:   game.add.image(577.53, 333.01, 'forbici_cut').setInteractive().setOrigin(0, 0),
         insegna1:   game.add.sprite(486, 80).setInteractive().setOrigin(0, 0),
         insegna2:   game.add.sprite(1620, 222).setInteractive().setOrigin(0, 0),
@@ -19,6 +20,9 @@ function Scenario(game){
             this.amaro.on('pointerdown', function(){
                 scenario.amaro.destroy();
             })
+        },
+        front_init: function(){
+            this.table = game.add.image(1485.71 , 543.94, 'front_table').setInteractive().setOrigin(0, 0);
         }
     }
 }

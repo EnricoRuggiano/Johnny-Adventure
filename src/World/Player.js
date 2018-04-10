@@ -1,6 +1,7 @@
 function Player(game){
     return{
         sprite: game.physics.add.sprite(154, 520, 'johnny_std'),
+        inventory: ['hand_item', 'money_item', 'gym_item', 'ibm_item'],
         init: function(){
             this.sprite.setCollideWorldBounds(true);
             var player = this.sprite;
