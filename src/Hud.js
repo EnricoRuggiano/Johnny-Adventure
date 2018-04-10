@@ -76,6 +76,14 @@ function Hud(game) {
             this.translate(item, cell.width);
             item.setScrollFactor(0, 0);
 
+
+            game.input.setDraggable(item);
+
+            game.input.on('drag', function (pointer, gameObject, dragX, dragY) {
+
+                gameObject.x = dragX;
+                gameObject.y = dragY;
+            });
         },
 
         mapItem: function(){
