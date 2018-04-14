@@ -33,6 +33,8 @@ function Hud(game) {
         graphicsList:       game.add.graphics({ fillStyle: {color: 0x917c6f, alpha: 0.39}, lineStyle: {color: 0x241f1c}}),
 
         cellArray: [],
+        hudItemArray: [],
+
         resize: function(object, scale, bound_x, bound_y){
           if(object.displayWidth > bound_x || object.displayHeight > bound_y){
               object.scaleX = scale;
@@ -69,22 +71,17 @@ function Hud(game) {
         },
 
         drawObject: function(cell, key_item){
-            var centerX = cell.x;
-            var centerY = cell.y;
-            var item = game.add.image(centerX, centerY, key_item).setName(key_item).setInteractive().setOrigin(0, 0);
-            this.resize(item, 0.9, cell.width, cell.height);
-            this.translate(item, cell.width);
-            item.setScrollFactor(0, 0);
+            var hudItem = new HudItem(game, cell.x, cell.y, key_item);
 
+            this.resize(hudItem.gameObject, 0.9, cell.width, cell.height);
+            this.translate(hudItem.gameObject, cell.width);
 
-            game.input.setDraggable(item);
+            hudItem.gameObject.setScrollFactor(0, 0);
+            hudItem.fixPosition();
+            hudItem.init();
 
-            game.input.on('drag', function (pointer, gameObject, dragX, dragY) {
-
-                gameObject.x = dragX;
-                gameObject.y = dragY;
-            });
-        },
+            this.hudItemArray.push(hudItem);
+            },
 
         mapItem: function(){
             for(var i=0; i<world.player.inventory.length; i++){
