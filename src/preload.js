@@ -1,7 +1,7 @@
 function preload(){
 
     // background
-    this.load.image('bar', 'assets/1260x765/bar-03.png');
+    this.load.image('bar', 'assets/1260x765/bar.png');
 
     // ambient
     this.load.image('amaro', 'assets/1260x765/objects/amaro.png');
@@ -11,7 +11,6 @@ function preload(){
     this.load.image('filo', 'assets/1260x765/objects/filo.png');
     this.load.image('forbici_cut', 'assets/1260x765/objects/forbici_cut.png');
     this.load.image('front_table', 'assets/1260x765/objects/front_table.png');
-
 
     // hud
     this.load.image('arrow_l', 'assets/1260x765/hud/arrow_left.png');
@@ -42,14 +41,12 @@ function preload(){
     });
 
     // CHARACTERS
-
     this.load.spritesheet('kora_idle', 'assets/1260x765/sprite/kora_idle.png', {
         frameWidth: 251.23 ,
         frameHeight: 305
     });
 
     // Johnny
-
     this.load.spritesheet('talk_right', 'assets/1260x765/sprite/talk_right.png', {
         frameWidth: 152.5000,
         frameHeight: 294

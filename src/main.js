@@ -18,7 +18,6 @@ function main() {
     };
 
     var game = new Phaser.Game(config);
-    var score = 0;
 
     function create() {
 
@@ -50,7 +49,6 @@ function main() {
                 backgroundColor: '#0F0F0F'
 
             }).setScrollFactor(0);
-
     }
 
     function update(time, delta) {

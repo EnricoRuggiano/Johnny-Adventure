@@ -20,17 +20,16 @@ function Hud(game) {
     const list_y = background_y;
     const list_width = calculateListWidth();
     const list_height = window.innerHeight/6;
-;
     const margin_y = 26; //height_factor * 0.2; // 10
-
 
     return {
         background:         new Phaser.Geom.Rectangle(background_x, background_y, background_width, background_height),
         list:               new Phaser.Geom.Rectangle(list_x, list_y + margin_y, list_width + width_factor,  list_height - 10),
-        arrow_l:            null,
-        arrow_r:            null,
         graphicsBackground: game.add.graphics({ fillStyle: {color: 0x241C1C, alpha: 0.57}, lineStyle: {color: 0x241f1c}}),
         graphicsList:       game.add.graphics({ fillStyle: {color: 0x917c6f, alpha: 0.39}, lineStyle: {color: 0x241f1c}}),
+
+        arrow_l:            null,
+        arrow_r:            null,
 
         cellArray: [],
         hudItemArray: [],
