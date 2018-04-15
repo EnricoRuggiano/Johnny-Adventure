@@ -31,8 +31,27 @@ function AnimationRegistry(game){
     });
 
     game.anims.create({
-        key: 'stand',
-        frames: [{key: 'johnny_std', frame: null}],
+        key: 'stand_right',
+        frames: game.anims.generateFrameNumbers('talk_right', {start: 9, end: 9})
+    });
+
+    game.anims.create({
+        key: 'stand_left',
+        frames: game.anims.generateFrameNumbers('talk_left', {start: 0, end: 0})
+    });
+
+    game.anims.create({
+        key: 'talk_right',
+        frames: game.anims.generateFrameNumbers('talk_right', {start: 0, end: 8}),
+        frameRate: 10,
+        repeat: -1
+    });
+
+    game.anims.create({
+        key: 'talk_left',
+        frames: game.anims.generateFrameNumbers('talk_left', {start: 1, end: 9}),
+        frameRate: 10,
+        repeat: -1
     });
 
     game.anims.create({

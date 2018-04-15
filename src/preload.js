@@ -20,7 +20,6 @@ function preload(){
     this.load.image('money_item', 'assets/1260x765/hud/money_item.png');
     this.load.image('gym_item', 'assets/1260x765/hud/gym_item.png');
     this.load.image('ibm_item', 'assets/1260x765/hud/ibm_item.png');
-
     this.load.image('amaro_item', 'assets/1260x765/hud/amaro_item.png');
     this.load.image('8ball_item', 'assets/1260x765/hud/8ball_item.png');
     this.load.image('banana_item', 'assets/1260x765/hud/banana_item.png');
@@ -50,14 +49,23 @@ function preload(){
     });
 
     // Johnny
-    this.load.image('johnny_std', 'assets/1260x765/JN-STD.png');
+
+    this.load.spritesheet('talk_right', 'assets/1260x765/sprite/talk_right.png', {
+        frameWidth: 152.5000,
+        frameHeight: 294
+    });
+
+    this.load.spritesheet('talk_left', 'assets/1260x765/sprite/talk_left.png', {
+        frameWidth: 152.9700,
+        frameHeight: 294
+    });
 
     this.load.spritesheet('walk_right', 'assets/1260x765/sprite/walk_right.png', {
-        frameWidth: 277,
-        frameHeight: 277
+        frameWidth: 278.50000,
+        frameHeight: 281
     });
     this.load.spritesheet('walk_left', 'assets/1260x765/sprite/walk_left.png', {
-        frameWidth: 277,
-        frameHeight: 277
+        frameWidth: 277.87,
+        frameHeight: 281
     });
 }
