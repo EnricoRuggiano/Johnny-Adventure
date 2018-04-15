@@ -34,6 +34,7 @@ function Hud(game) {
 
         cellArray: [],
         hudItemArray: [],
+        itemOffset:   0,
 
         resize: function(object, scale, bound_x, bound_y){
           if(object.displayWidth > bound_x || object.displayHeight > bound_y){
@@ -70,6 +71,29 @@ function Hud(game) {
             }
         },
 
+        shiftRightItems: function(){
+            this.itemOffset += 1;
+            (this.itemOffset > world.player.inventory.length-1)? this.itemOffset = 0: 0;
+            this.mapItem();
+        },
+
+        shiftLeftItems: function(){
+            this.itemOffset -= 1;
+            (this.itemOffset < 0)? this.itemOffset = world.player.inventory.length-1: 0;
+            this.mapItem();
+        },
+
+        setArrowClick: function(){
+            this.arrow_l.on('pointerdown', function(){
+                this.clearItems();
+                this.shiftLeftItems()
+            }, this);
+            this.arrow_r.on('pointerdown', function(){
+                this.clearItems();
+                this.shiftRightItems()
+            }, this);
+        },
+
         drawObject: function(cell, key_item){
             var hudItem = new HudItem(game, cell.x, cell.y, key_item);
 
@@ -82,16 +106,18 @@ function Hud(game) {
 
             this.hudItemArray.push(hudItem);
             },
+        clearItems: function(){
+            this.hudItemArray.forEach(function(value, index, array){
+                delete array[index].gameObject.data;
+                array[index].gameObject.destroy();
+            });
+            this.hudItemArray.splice(0, this.hudItemArray.length - 1);
+        },
 
         mapItem: function(){
-            for(var i=0; i<world.player.inventory.length; i++){
-                if(i > this.cellArray.length - 1){
-                    return;
-                }
-                var cell = this.cellArray[i];
-                var key_item = world.player.inventory[i];
-                this.drawObject(cell, key_item);
-            }
+            this.cellArray.forEach(function callback(value, index, cellArray){
+               this.drawObject(cellArray[index], world.player.inventory[index + this.itemOffset]);
+            }, this);
         },
 
         init: function () {
@@ -114,6 +140,7 @@ function Hud(game) {
 
             this.spawnItem();
             this.mapItem();
+            this.setArrowClick();
         }
     }
 }

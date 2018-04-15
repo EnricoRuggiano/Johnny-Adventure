@@ -2,6 +2,9 @@ function Player(game){
     return{
         sprite: game.physics.add.sprite(154, 520, 'johnny_std'),
         inventory: ['hand_item', 'money_item', 'gym_item', 'ibm_item'],
+        /*inventory: ['hand_item', 'money_item', 'gym_item', 'ibm_item', '8ball_item',
+                    'amaro_item', 'banana_item', 'beer_item', 'filo_item', 'forbici_item'],
+        */
         init: function(){
             this.sprite.setCollideWorldBounds(true);
             var player = this.sprite;
