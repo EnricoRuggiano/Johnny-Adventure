@@ -40,7 +40,7 @@ function main() {
         hud.init(this);
 
         //score
-        scoreText = this.add.text(cameraHandler.camera.x, cameraHandler.camera.y, 'Score',
+        /*scoreText = this.add.text(cameraHandler.camera.x, cameraHandler.camera.y, 'Score',
             {
                 fontFamily: 'Verdana',
                 fontWeight: 'bold',
@@ -48,7 +48,9 @@ function main() {
                 fill: "#64FF2B",
                 backgroundColor: '#0F0F0F'
 
-            }).setScrollFactor(0);
+            }).setScrollFactor(0);*/
+        textHandler = new TextHandler(this);
+        textHandler.init();
     }
 
     function update(time, delta) {
