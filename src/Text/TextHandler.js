@@ -27,20 +27,20 @@ function TextHandler(game){
             fontSize: '24px',
             fill: "#64FF2B",
             stroke: "#000",
-            strokeThickness: 5,
+            strokeThickness: 5
             //backgroundColor: '#0F0F0F'
         };
 
     return {
-        dialogBox:  game.add.graphics({ fillStyle: {color: 0x241C1C, alpha: 0.57}, lineStyle: {color: 0x241f1c}}),
+        dialogBox:      game.add.graphics({ fillStyle: {color: 0x241C1C, alpha: 0.57}, lineStyle: {color: 0x241f1c}}),
 
-        dialogZone: game.add.zone(dialogZone_X, dialogZone_Y, dialogZone_weight, dialogZone_height).setOrigin(0,0),
-        scoreZone: game.add.zone(scoreZone_X, scoreZone_Y, scoreZone_weight, scoreZone_height).setOrigin(0,0),
-        infoZone: game.add.zone(infoZone_X, infoZone_Y, infoZone_weight, infoZone_height).setOrigin(0,0),
+        dialogZone:     game.add.zone(dialogZone_X, dialogZone_Y, dialogZone_weight, dialogZone_height).setOrigin(0,0),
+        scoreZone:      game.add.zone(scoreZone_X, scoreZone_Y, scoreZone_weight, scoreZone_height).setOrigin(0,0),
+        infoZone:       game.add.zone(infoZone_X, infoZone_Y, infoZone_weight, infoZone_height).setOrigin(0,0),
 
-        scoreText : game.add.text(scoreZone_X, scoreZone_Y, 'Score', config),
-        infoText:   game.add.text(0, 0, 'Lorem Ipsum', config).setOrigin(0,0),
-        dialogText: game.add.text(0, 0, '', config).setOrigin(0,0),
+        scoreText:      game.add.text(scoreZone_X, scoreZone_Y, 'Score', config),
+        infoText:       game.add.text(0, 0, 'Lorem Ipsum', config).setOrigin(0,0),
+        dialogText:     game.add.text(0, 0, '', config).setOrigin(0,0),
 
         fitFont: function(text, bound){
             if(text.height < bound.height)
@@ -59,25 +59,25 @@ function TextHandler(game){
 
             this.dialogBox.fillRectShape(this.dialogZone);
             this.dialogBox.strokeRectShape(this.dialogZone);
-            this.dialogBox.setScrollFactor(0);
 
+            this.dialogBox.setScrollFactor(0);
             this.scoreText.setScrollFactor(0);
             this.infoText.setScrollFactor(0);
+            this.dialogText.setScrollFactor(0);
+
             this.scoreText.setBackgroundColor('#241C1C57');
             this.infoText.setBackgroundColor('#241C1C57');
 
-            this.dialogText.setScrollFactor(0);
-
             this.dialogText.setWordWrapWidth(this.dialogZone.width);
-            this.fitFont(this.dialogText, this.dialogZone);
             this.scoreText.setWordWrapWidth(this.scoreZone.width);
-            this.fitFont(this.scoreText, this.scoreZone);
             this.infoText.setWordWrapWidth(this.infoZone.width);
+
+            this.fitFont(this.dialogText, this.dialogZone);
+            this.fitFont(this.scoreText, this.scoreZone);
             this.fitFont(this.infoText, this.infoZone);
 
+            //this.dialogText.setText(text);
             Phaser.Display.Align.In.TopCenter(this.infoText, this.dialogZone);
-
-            this.dialogText.setText(text);
             Phaser.Display.Align.In.Center(this.dialogText, this.dialogZone);
             this.setVisible(false);
         }
