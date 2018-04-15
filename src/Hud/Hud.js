@@ -1,26 +1,29 @@
 function Hud(game) {
 
+    // unity factor
     const width_factor = window.innerWidth/8;
     const height_factor = window.innerHeight/4;
 
+    // background rectangle
     const background_x = 0;
     const background_y = cameraHandler.camera.height - height_factor;
     const background_width = window.innerWidth;
     const background_height = height_factor;
 
+    // cells proprieties
     const cell_width = height_factor;
     const cell_margin_x = 20;
 
+    // list rectangle
     function calculateListWidth(){
         var difference = window.innerWidth - width_factor - cell_margin_x;
         return Math.floor(difference / (cell_width + cell_margin_x)) * cell_width;
     }
-
     const list_x = width_factor;
     const list_y = background_y;
     const list_width = calculateListWidth();
     const list_height = window.innerHeight/6;
-    const margin_y = 26; //height_factor * 0.2; // 10
+    const margin_y = 26;
 
     return {
         background:         new Phaser.Geom.Rectangle(background_x, background_y, background_width, background_height),
@@ -35,6 +38,7 @@ function Hud(game) {
         hudItemArray: [],
         itemOffset:   0,
 
+        //Utils
         resize: function(object, scale, bound_x, bound_y){
           if(object.displayWidth > bound_x || object.displayHeight > bound_y){
               object.scaleX = scale;
@@ -49,27 +53,7 @@ function Hud(game) {
             }
         },
 
-        createRect: function(x, offsetY, width){
-            return new Phaser.Geom.Rectangle(x, list_y + 26 + offsetY, width, list_height - 14 - offsetY)
-        },
-
-        spawnItem: function(){
-
-            var width = cell_width;
-            var x = width_factor + cell_margin_x;
-
-            for(var i = 0; i < list_width/cell_width; i++){
-                var rect = this.createRect(x, 4, width);
-
-                var cell = game.add.graphics({ fillStyle: {color: 0x000000, alpha: 0.34}, lineStyle: {color: 0x000000}});
-                cell.fillRectShape(rect);
-                cell.strokeRectShape(rect);
-                cell.setScrollFactor(0, 0);
-                this.cellArray.push(rect);
-                x += width + cell_margin_x;
-            }
-        },
-
+        // Arrow Events
         shiftRightItems: function(){
             this.itemOffset += 1;
             (this.itemOffset > world.player.inventory.length-1)? this.itemOffset = 0: 0;
@@ -93,6 +77,25 @@ function Hud(game) {
             }, this);
         },
 
+        // Creating HUD Rectangles
+        spawnItem: function(){
+
+            var width = cell_width;
+            var x = width_factor + cell_margin_x;
+            var offsetY = 4;
+
+            for(var i = 0; i < list_width/cell_width; i++){
+                var rect =  new Phaser.Geom.Rectangle(x, list_y + 26 + offsetY, width, list_height - 14 - offsetY);
+                var cell = game.add.graphics({ fillStyle: {color: 0x000000, alpha: 0.34}, lineStyle: {color: 0x000000}});
+
+                cell.fillRectShape(rect);
+                cell.strokeRectShape(rect);
+                cell.setScrollFactor(0, 0);
+                this.cellArray.push({rectangle: rect, graphics: cell});
+                x += width + cell_margin_x;
+            }
+        },
+
         drawObject: function(cell, key_item){
             var hudItem = new HudItem(game, cell.x, cell.y, key_item);
 
@@ -105,6 +108,14 @@ function Hud(game) {
 
             this.hudItemArray.push(hudItem);
             },
+
+        mapItem: function(){
+            this.cellArray.forEach(function callback(value, index, cellArray){
+                this.drawObject(cellArray[index].rectangle, world.player.inventory[index + this.itemOffset]);
+            }, this);
+        },
+
+        // Refresh Items
         clearItems: function(){
             this.hudItemArray.forEach(function(value, index, array){
                 delete array[index].gameObject.data;
@@ -113,12 +124,35 @@ function Hud(game) {
             this.hudItemArray.splice(0, this.hudItemArray.length - 1);
         },
 
-        mapItem: function(){
-            this.cellArray.forEach(function callback(value, index, cellArray){
-               this.drawObject(cellArray[index], world.player.inventory[index + this.itemOffset]);
-            }, this);
+        // Hide/Unhide Functionalities
+        setVisible: function(bool){
+            this.cellArray.forEach(function (value, index, array){
+                    array[index].graphics.setVisible(bool);
+                });
+            this.hudItemArray.forEach(function (value, index, array){
+                array[index].gameObject.setVisible(bool);
+            });
+            this.graphicsBackground.setVisible(bool);
+            this.graphicsList.setVisible(bool);
+            this.arrow_l.setVisible(bool);
+            this.arrow_r.setVisible(bool);
         },
 
+        setHideEvent: function(){
+            var hud = this;
+            keyboardHandler.keyboard.on('keydown', function(event){
+                switch (event.key){
+                    case 'h':
+                        hud.setVisible(false);
+                        break;
+                    case 'j':
+                        hud.setVisible(true);
+                        break;
+                }
+            });
+        },
+
+        // initialize Hud
         init: function () {
             this.graphicsBackground.fillRectShape(this.background);
             this.graphicsBackground.strokeRectShape(this.background);
@@ -139,7 +173,9 @@ function Hud(game) {
 
             this.spawnItem();
             this.mapItem();
+
             this.setArrowClick();
+            this.setHideEvent();
         }
     }
 }

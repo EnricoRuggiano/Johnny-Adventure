@@ -2,8 +2,8 @@ function Zone(game){
     return {
         // left
         jukebox:        game.add.zone(147, 314, 141, 235).setInteractive(),
-        plant:     	    game.add.zone(48, 430, 95, 133).setInteractive(),
-        pool:    		game.add.zone(104, 311, 22, 103).setInteractive(),
+        plant:     	   game.add.zone(48, 430, 95, 133).setInteractive(),
+        pool:    			game.add.zone(104, 311, 22, 103).setInteractive(),
         electric:       game.add.zone(305, 478, 30, 26).setInteractive(),
         tank:           game.add.zone(119, 116, 179, 80).setInteractive(),
         vhs:            game.add.zone(130, 226, 61, 40).setInteractive(),
