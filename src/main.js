@@ -51,6 +51,8 @@ function main() {
             }).setScrollFactor(0);*/
         textHandler = new TextHandler(this);
         textHandler.init();
+
+        EventPointer(this);
     }
 
     function update(time, delta) {
