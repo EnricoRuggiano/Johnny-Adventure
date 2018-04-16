@@ -39,20 +39,14 @@ function main() {
         hud = new Hud(this);
         hud.init(this);
 
-        //score
-        /*scoreText = this.add.text(cameraHandler.camera.x, cameraHandler.camera.y, 'Score',
-            {
-                fontFamily: 'Verdana',
-                fontWeight: 'bold',
-                fontSize: '24px',
-                fill: "#64FF2B",
-                backgroundColor: '#0F0F0F'
-
-            }).setScrollFactor(0);*/
+        //text
         textHandler = new TextHandler(this);
         textHandler.init();
 
+        //events
+        dialogRegistry = new DialogRegistry();
         EventPointer(this);
+        EventClick(this);
     }
 
     function update(time, delta) {

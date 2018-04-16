@@ -38,8 +38,8 @@ function TextHandler(game){
         scoreZone:      game.add.zone(scoreZone_X, scoreZone_Y, scoreZone_weight, scoreZone_height).setOrigin(0,0),
         infoZone:       game.add.zone(infoZone_X, infoZone_Y, infoZone_weight, infoZone_height).setOrigin(0,0),
 
-        scoreText:      game.add.text(scoreZone_X, scoreZone_Y, 'Score', config),
-        infoText:       game.add.text(0, 0, 'Lorem Ipsum', config).setOrigin(0,0),
+        scoreText:      game.add.text(scoreZone_X, scoreZone_Y, 'Score: ' + world.player.score, config),
+        infoText:       game.add.text(0, 0, '', config).setOrigin(0,0),
         dialogText:     game.add.text(0, 0, '', config).setOrigin(0,0),
 
         fitFont: function(text, bound){

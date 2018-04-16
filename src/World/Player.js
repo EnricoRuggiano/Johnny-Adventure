@@ -1,6 +1,7 @@
 function Player(game){
     return{
         sprite: game.physics.add.sprite(154, 520, ''),
+        score: 0,
         inventory: ['Take', 'Money', 'Dumbbell', 'Floppy Disk'],
         /*inventory: ['hand_item', 'money_item', 'gym_item', 'ibm_item', '8ball_item',
                     'amaro_item', 'banana_item', 'beer_item', 'filo_item', 'forbici_item'],

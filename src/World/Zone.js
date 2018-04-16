@@ -3,7 +3,7 @@ function Zone(game){
         // left
         jukebox:        game.add.zone(147, 314, 141, 235).setInteractive().setName("Jukebox"),
         plant:          game.add.zone(48, 430, 95, 133).setInteractive().setName("Plant"),
-        pool:           game.add.zone(104, 311, 22, 103).setInteractive().setName("Pool"),
+        pool:           game.add.zone(104, 311, 22, 103).setInteractive().setName("Cue"),
         electric:       game.add.zone(305, 478, 30, 26).setInteractive().setName("Electric Socket"),
         tank:           game.add.zone(119, 116, 179, 80).setInteractive().setName("Beer Tank"),
         vhs:            game.add.zone(130, 226, 61, 40).setInteractive().setName("Vhs"),
