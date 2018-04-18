@@ -46,6 +46,10 @@ function preload(){
         frameHeight: 305
     });
 
+    this.load.image('scarlet_test', 'assets/1260x765/sprite/scarlet.png');
+    this.load.image('jim_test', 'assets/1260x765/sprite/jim.png');
+    this.load.image('sara_test', 'assets/1260x765/sprite/sara.png');
+
     // Johnny
     this.load.spritesheet('talk_right', 'assets/1260x765/sprite/talk_right.png', {
         frameWidth: 152.5000,

@@ -62,11 +62,23 @@ function AnimationRegistry(game){
     });
 
     // Characters
-
     game.anims.create({
         key: 'kora',
         frames: game.anims.generateFrameNumbers('kora_idle', {start: 0, end: 15}),
         frameRate: 8,
         repeat: -1
+    });
+
+    game.anims.create({
+        key: 'scarlet',
+        frames: [{ key: 'scarlet_test', frame: null }]
+    });
+    game.anims.create({
+        key: 'jim',
+        frames: [{ key: 'jim_test', frame: null }]
+    });
+    game.anims.create({
+        key: 'sara',
+        frames: [{ key: 'sara_test', frame: null }]
     });
 }
