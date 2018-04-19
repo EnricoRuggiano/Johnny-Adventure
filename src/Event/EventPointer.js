@@ -1,7 +1,8 @@
 function EventClick(game){
-    game.input.on('pointerdown', function(pointer, gameObject){
+    game.input.on('pointerdown', function(event, gameObject){
         var random_index = Math.floor(Math.random() * dialogRegistry.no.length);
-        showDialog(game, dialogRegistry.no[random_index], 3000);
+        if(gameObject[0])
+            showDialog(game, dialogRegistry.no[random_index], gameObject[0]);
     });
 }
 
