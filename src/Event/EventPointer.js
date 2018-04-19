@@ -1,7 +1,9 @@
 function EventClick(game){
     game.input.on('pointerdown', function(event, gameObject){
         var random_index = Math.floor(Math.random() * dialogRegistry.no.length);
-        if(gameObject[0])
+
+        // Only for Zone game object
+        if(gameObject[0] && Object.values(world.zone).includes(gameObject[0]))
             showDialog(game, dialogRegistry.no[random_index], gameObject[0]);
     });
 }
