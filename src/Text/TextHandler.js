@@ -15,10 +15,11 @@ function TextHandler(game){
     const infoZone_weight = dialogZone_weight;
     const infoZone_height = window.innerWidth/12;
 
-    var text = 'Voluptatem distinctio' +
+   var text = 'Voluptatem distinctio' +
         'consequatur cumque fugiat aut adipisci non. \n' +
         'Modi voluptates omnis placeat et explicabo. ' +
         'Ut modi odit nobis non. Non ut dolores quos. Dolores possimus minima qui.';
+   // var text = 'Its seems a very good idea, but I suppose that programming it could lead to irrecoverable crashes!'
 
     const config =
         {
@@ -43,7 +44,7 @@ function TextHandler(game){
         dialogText:     game.add.text(0, 0, '', config).setOrigin(0,0),
 
         fitFont: function(text, bound){
-            if(text.height < bound.height)
+             if(text.height < bound.height)
                 return;
             text.setStroke("#000", parseInt(text.style.fontSize)/5);
             text.setFontSize(parseInt(text.style.fontSize) - 1);
@@ -53,6 +54,7 @@ function TextHandler(game){
         setVisible: function(bool){
             this.dialogBox.setVisible(bool);
             this.dialogText.setVisible(bool);
+            this.fitFont(this.dialogText, this.dialogZone);
         },
 
         init: function(){
@@ -72,11 +74,12 @@ function TextHandler(game){
             this.scoreText.setWordWrapWidth(this.scoreZone.width);
             this.infoText.setWordWrapWidth(this.infoZone.width);
 
+            //this.dialogText.setText(text);
+
             this.fitFont(this.dialogText, this.dialogZone);
             this.fitFont(this.scoreText, this.scoreZone);
             this.fitFont(this.infoText, this.infoZone);
 
-            //this.dialogText.setText(text);
             Phaser.Display.Align.In.TopCenter(this.infoText, this.dialogZone);
             Phaser.Display.Align.In.Center(this.dialogText, this.dialogZone);
             this.setVisible(false);

@@ -28,8 +28,8 @@ function showDialog(game, dialog, gameObject){
         game.input.keyboard.stopListeners();
 
         textHandler.infoText.setText('');
-        textHandler.setVisible(true);
         textHandler.dialogText.setText(dialog.text);
+        textHandler.setVisible(true);
         Phaser.Display.Align.In.Center(textHandler.dialogText, textHandler.dialogZone);
     };
 
