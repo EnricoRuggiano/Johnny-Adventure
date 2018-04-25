@@ -6,7 +6,7 @@
 
 go to your 'local directory' and run
 
-```npm build```
+```npm install```
 
 ## How To Play
 
