@@ -16,6 +16,10 @@ then open a broswer and connect to `localhost:1234`.
 
 That's it! Now you can play Johnny Adventure!
 
+## Play Online!
+
+Just go to: ``https://vaporuser.github.io/Johnny-Adventure/``
+
 ## License
 
 Copyright (c) 2018 Enrico Ruggiano
