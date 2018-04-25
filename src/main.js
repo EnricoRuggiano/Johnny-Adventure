@@ -45,8 +45,7 @@ function main() {
 
         //events
         dialogRegistry = new DialogRegistry();
-        EventPointer(this);
-        EventClick(this);
+        initEvents(this);
     }
 
     function update(time, delta) {

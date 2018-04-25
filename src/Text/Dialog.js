@@ -44,3 +44,8 @@ function showDialog(game, dialog, gameObject){
 
     };
 }
+
+function talk(game, gameObject, key){
+    var random_index = Math.floor(Math.random() * dialogRegistry[key].length);
+    showDialog(game, dialogRegistry[key][random_index], gameObject);
+}

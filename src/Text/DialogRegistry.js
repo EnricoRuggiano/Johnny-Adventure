@@ -1,6 +1,6 @@
 function DialogRegistry(){
     return {
-        no:
+        'no':
         [
             {
                 text: "It's seems a very good idea, but I suppose that programming it could lead to irrecoverable crashes!",
@@ -33,15 +33,49 @@ function DialogRegistry(){
             },
         ],
 
-        tired_1: "Mnnnn, where is the fun part of this game?",
-        tired_2: "Ehii!!! I'am waiting here!",
+        'tired':
+        [
+            {
+                text:  "Mnnnn, where is the fun part of this game?",
+                audio: "",
+                time: 2000
+            },
 
-        // zone
-        plant_1: "A very green thing! Cooool!!!",
-        plant_2: "That is the WC of this place. Damn, what a classy place!",
+            {
+                text:  "Ehii!!! I'am waiting here!",
+                audio: "",
+                time: 2000
+            }
+        ],
 
-        jukebox_1: "Nothing is better than some music in a beautiful place like this!",
-        jukebox_2: "Ladies, Let's play some Rock & Roll!"
+        'Plant':
+        [
+            {
+                text:  "A very green thing! Cooool!!!",
+                audio: "",
+                time: 2000
+            },
 
+            {
+                text:  "That is the WC of this place. Damn, what a classy place!",
+                audio: "",
+                time: 3000
+            }
+        ],
+
+        'Jukebox' :
+        [
+            {
+                text:  "Nothing is better than some music in a beautiful place like this!",
+                audio: "",
+                time: 3000
+            },
+
+            {
+                text:  "Ladies, Let's play some Rock & Roll!",
+                audio: "",
+                time: 2000
+            }
+        ]
     }
 }

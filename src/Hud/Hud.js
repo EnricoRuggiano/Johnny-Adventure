@@ -97,14 +97,13 @@ function Hud(game) {
         },
 
         drawObject: function(cell, key_item){
-            var hudItem = new HudItem(game, cell.x, cell.y, key_item);
+            var hudItem = game.add.image(cell.x, cell.y, key_item).setName(key_item).setInteractive().setOrigin(0, 0);
 
-            this.resize(hudItem.gameObject, 0.9, cell.width, cell.height);
-            this.translate(hudItem.gameObject, cell.width);
+            this.resize(hudItem, 0.9, cell.width, cell.height);
+            this.translate(hudItem, cell.width);
 
-            hudItem.gameObject.setScrollFactor(0, 0);
-            hudItem.fixPosition();
-            hudItem.init();
+            hudItem.setScrollFactor(0, 0);
+            game.input.setDraggable(hudItem);
 
             this.hudItemArray.push(hudItem);
             },
@@ -118,8 +117,8 @@ function Hud(game) {
         // Refresh Items
         clearItems: function(){
             this.hudItemArray.forEach(function(value, index, array){
-                delete array[index].gameObject.data;
-                array[index].gameObject.destroy();
+               // delete array[index].data;
+                array[index].destroy();
             });
             this.hudItemArray.splice(0, this.hudItemArray.length - 1);
         },
@@ -130,7 +129,7 @@ function Hud(game) {
                     array[index].graphics.setVisible(bool);
                 });
             this.hudItemArray.forEach(function (value, index, array){
-                array[index].gameObject.setVisible(bool);
+                array[index].setVisible(bool);
             });
             this.graphicsBackground.setVisible(bool);
             this.graphicsList.setVisible(bool);
