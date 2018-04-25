@@ -1,21 +1,3 @@
-# Johnny Adventure
-
-## How To Install
-
-``` git clone 'this repository' 'your local directory'```
-
-go to your 'local directory' and run
-
-```npm build```
-
-## How To Play
-
-``` npm start``` 
-
-then open a broswer and connect to `localhost:1234`.
-
-That's it! Now you can play Johnny Adventure!
-
 ## License
 
 Copyright (c) 2018 Enrico Ruggiano
