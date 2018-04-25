@@ -21,8 +21,14 @@ function eventDragDrop(game){
 
     game.input.on('drop', function (pointer, gameObject, dropZone) {
         switch(gameObject.name + '_' + dropZone.name){
+            case 'Take_Beer':
+                world.scenario.beer.destroy();
+                world.zone.beer.destroy();
+                world.player.inventory.push("Beer");
+                dialogHandler.talk(game, dropZone, 'Take_Beer');
+                break;
             default:
-                dialogHandler.talk(game, gameObject, 'no');
+                dialogHandler.talk(game, dropZone, 'no');
         }
     });
 

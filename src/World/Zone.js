@@ -35,6 +35,30 @@ function Zone(game){
         cask:           game.add.zone(1618, 403, 114, 132).setDropZone().setName("Casks"),
         calendar:       game.add.zone(1752, 282, 114, 132).setDropZone().setName("Calendar"),
 
-        init: function(){}
+        // objects
+        amaro:      null,
+        ball:       null,
+        banana:     null,
+        beer:       null,
+        filo:       null,
+        scissors:   null,
+
+        init: function(){
+
+            //object drop zone
+            this.amaro = game.add.zone(world.scenario.amaro.x, world.scenario.amaro.y, world.scenario.amaro.width, world.scenario.amaro.height)
+                .setDropZone().setName("Whisky");
+            this.ball = game.add.zone(world.scenario.ball.x, world.scenario.ball.y, world.scenario.ball.width, world.scenario.ball.height)
+                .setDropZone().setName("8 Ball");
+            this.banana = game.add.zone(world.scenario.banana.x, world.scenario.banana.y, world.scenario.banana.width, world.scenario.banana.height)
+                .setDropZone().setName("Banana Peel");
+            this.beer = game.add.zone(world.scenario.beer.x, world.scenario.beer.y, world.scenario.beer.width, world.scenario.beer.height)
+                .setDropZone().setName("Beer");
+            this.filo = game.add.zone(world.scenario.filo.x, world.scenario.filo.y, world.scenario.filo.width, world.scenario.filo.height)
+                .setDropZone().setName("Film");
+            this.scissors = game.add.zone(world.scenario.scissors.x, world.scenario.scissors.y, world.scenario.scissors.width, world.scenario.scissors.height)
+                .setDropZone().setName("Scissors");
+
+        }
     }
 }

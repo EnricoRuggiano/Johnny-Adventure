@@ -76,6 +76,16 @@ function DialogRegistry(){
                 audio: "",
                 time: 2000
             }
+        ],
+
+        // Event
+        'Take_Beer' :
+        [
+            {
+                text: "Yeah! It's time to drink, Baby!",
+                audio: "",
+                time: 2000
+            }
         ]
     }
 }
