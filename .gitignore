@@ -1,5 +1,5 @@
-assets/**
 WhatToDo.md
+*.txt
 
 .idea/**
 node_modules/**
