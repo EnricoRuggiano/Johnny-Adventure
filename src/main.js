@@ -43,8 +43,11 @@ function main() {
         textHandler = new TextHandler(this);
         textHandler.init();
 
-        //events
+        // dialog
         dialogRegistry = new DialogRegistry();
+        dialogHandler = new DialogHandler(this);
+
+        //events
         initEvents(this);
     }
 

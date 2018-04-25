@@ -1,4 +1,5 @@
 function eventDragDrop(game){
+
     // drag on
     game.input.on('drag', function (pointer, gameObject, dragX, dragY) {
         gameObject.x = dragX;
@@ -19,16 +20,17 @@ function eventDragDrop(game){
     });
 
     game.input.on('drop', function (pointer, gameObject, dropZone) {
-
         switch(gameObject.name + '_' + dropZone.name){
             default:
-                talk(game, gameObject, 'no');
+                dialogHandler.talk(game, gameObject, 'no');
         }
     });
+
     // drag end
     game.input.on('dragend', function (pointer, gameObject) {
             gameObject.x = gameObject.input.dragStartX;
             gameObject.y = gameObject.input.dragStartY;
+            // restart event listner on pointOver
             eventPointOver(game);
     });
 };
