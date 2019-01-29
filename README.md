@@ -18,7 +18,9 @@ That's it! Now you can play Johnny Adventure!
 
 ## Play Online!
 
-Just go to: ``https://vaporuser.github.io/Johnny-Adventure/``
+Just go to: 
+
+``https://enricoruggiano.github.io/Johnny-Adventure/``
 
 ## License
 
