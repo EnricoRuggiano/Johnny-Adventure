@@ -8,8 +8,8 @@ module.exports = {
     entry: './src/index.js',
     devtool: 'source-map',
     output: {
-        path: path.resolve(__dirname, 'www/build'),
-        publicPath: '/www/build/',
+        path: path.resolve(__dirname, 'build'),
+        publicPath: 'build/',
         filename: 'project.bundle.js'
     },
    plugins: [
