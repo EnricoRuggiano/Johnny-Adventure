@@ -4,7 +4,7 @@
 
 Johnny Adventure is a point and click game in the flavour of the old adventure pc games.
 
-## The plot
+## The Game
 
 The story follows the adventure of our protagonist, Johnny Lovelace that tries to achieve his dreams. During his journey he will meet a lot strange characters and he will try to solve a mistery.
 
@@ -18,7 +18,18 @@ The story follows the adventure of our protagonist, Johnny Lovelace that tries t
 
 ---
 
-## How To Install
+## An Example of Phaser3
+
+Even if this version is not anymore maintened, this code could be useful for the people willing to learn [Phaser3](https://phaser.io/phaser3) game engine.
+
+
+## Demo is available online!
+
+If you want to try an early demo of Johnny Adventure, please visit this url:
+
+``https://enricoruggiano.github.io/Johnny-Adventure/``
+
+### How To Install
 
 ``` git clone 'this repository' 'your local directory'```
 
@@ -26,19 +37,16 @@ go to your 'local directory' and run
 
 ```npm install```
 
-## How To Play
+### How To Play
 
 ``` npm start``` 
 
-then open a broswer and connect to `localhost:1234`.
+then open a broswer and connect to `localhost:8000`.
 
 That's it! Now you can play Johnny Adventure!
 
-## Play Online!
+---
 
-Just go to: 
-
-``https://enricoruggiano.github.io/Johnny-Adventure/``
 
 ## License
 
@@ -60,5 +68,14 @@ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 Everything under the folder ```/assets```, its sub-folders and every graphical components
 used in this software are under Copyright and every different use 
-from using it in this software must have an authorization of 
-Copyright owner. 
+from using it in this software must have an authorization of the copyright owner. 
+
+I don't care about the code, but the idea, the characters, the original assets, the music and the story are mine.
+
+# <img src='./docs/patreon.png' width=30px></img> Support Us On Patreon
+
+Are you intersted into Johnny Adventure or you just want more news about it?
+
+> Check our official [Patreon page](https://www.patreon.com/johnnyadventure>)
+ for more informations!
+
