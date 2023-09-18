@@ -1,0 +1,105 @@
+{
+  "gm_bar": {
+    "env_0": {
+      "ENG": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Integer placerat, mauris consequat placerat condimentum, nibh augue interdum orci, a fringilla ipsum massa vel felis.\n Praesent blandit malesuada eros, hendrerit maximus sapien sollicitudin eget.\n Nam viverra rhoncus massa quis posuere.\n Aenean erat mauris, tempus eget volutpat id, pharetra consequat enim.\n Donec ut semper dui, sit amet aliquet quam.\n Proin facilisis, nulla vel gravida tempor, justo arcu scelerisque nibh, ut euismod lorem nulla non neque.\n In magna leo, molestie in semper id, consectetur eu nisl.\n Cras dui urna, finibus nec orci nec, facilisis finibus augue.\n Quisque finibus diam ligula, id gravida libero molestie in.\n Aliquam vel risus nunc.\n Duis porta ornare pharetra.\n Integer feugiat pulvinar commodo.\n Praesent at est quis dolor vestibulum eleifend.\n Sed interdum fermentum nisl, et pretium ante molestie vitae.\n Nullam in ligula lacinia, aliquam tortor quis, tristique tellus.\n Aliquam sem lectus, convallis a rhoncus a, maximus id urna.\nPhasellus dolor nunc, commodo ut egestas id, molestie sed nisl.\n In scelerisque arcu ante, non condimentum massa volutpat sit amet.\n Suspendisse ipsum lacus, molestie ac viverra at, scelerisque non felis.\n Nunc ultrices venenatis urna molestie iaculis.\n Proin dapibus ut nunc at laoreet.\n Nunc purus est, porta eget sollicitudin vitae, dapibus sit amet orci.\n Etiam pharetra pretium lacus, malesuada auctor risus ornare non.\n Nulla facilisi.\n Fusce pulvinar mattis quam nec bibendum.\n Vivamus at dolor sed velit congue vestibulum eget ut quam.\n Maecenas at suscipit nibh, id gravida urna.\n Quisque congue euismod elit et feugiat.\n Aliquam in porta odio.\n Sed ut orci neque.\n Cras et malesuada felis.\n Quisque gravida ex sem, ac consequat felis dictum eget.\n ",
+          "audio": "",
+          "time": 2000
+        }
+      ],
+      "ITA": [
+        {
+          "text": "Neon Bar Sign",
+          "audio": "",
+          "time": 2000
+        }
+      ]
+    },
+
+    "zon_0": {
+      "ENG": [
+        {
+          "text": "A very GREEN thing. Coool!",
+          "audio": "",
+          "time": 2000
+        },
+        {
+          "text": "That is the WC of this place. Damn, what a classy place!",
+          "audio": "",
+          "time": 2000
+        }
+      ],
+      "ITA": [
+        {
+          "text": "Wooah! Una roba super VERDE!",
+          "audio": "",
+          "time": 2000
+        },
+        {
+          "text": "E' il WC di questo posto. Questo si' che e' un posto di classe!",
+          "audio": "",
+          "time": 2000
+        }
+      ]
+    }
+  },
+  "player": {
+    "no": {
+      "ENG": [
+        {
+          "text": "It's seems a very good idea, but I suppose that coding it, it could lead to irrecoverable crashes!",
+          "audio": "",
+          "time": 4000
+        },
+        {
+          "text": "I don't think that it could be helpful.",
+          "audio": "",
+          "time": 2700
+        },
+        {
+          "text": "Yeaaah! That is a VERY bad idea!",
+          "audio": "",
+          "time": 2500
+        },
+        {
+          "text": "Maybe I should get more vitamins for that!",
+          "audio": "",
+          "time": 2500
+        },
+        {
+          "text": "Not today, baby! I have a headache.",
+          "audio": "",
+          "time": 2000
+        }
+      ],
+      "ITA": [
+        {
+          "text": "Sembra davvero una grande bella idea, ma credo che realizzarla porterebbe a disastri irrecuperabili!",
+          "audio": "",
+          "time": 4000
+        },
+        {
+          "text": "Mnnn, non penso che sia d'aiuto.",
+          "audio": "",
+          "time": 2700
+        },
+        {
+          "text": "Grande! Questa si che e' una BRUTTA idea!",
+          "audio": "",
+          "time": 2500
+        },
+        {
+          "text": "No dai, penso di avere bisogno di piu' vitamine per questo!",
+          "audio": "",
+          "time": 2500
+        },
+        {
+          "text": "Non oggi pupa, ho il malditesta.",
+          "audio": "",
+          "time": 2000
+        }
+      ]
+    }
+  }
+}

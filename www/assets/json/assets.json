@@ -1,0 +1,245 @@
+{
+  "title":
+  {
+    "audio":
+    {
+      "jingle": "assets/music/jingle.ogg"
+    },
+    "svg":
+    {
+      "loading_screen":       "assets/svg/title/loading_screen.svg",
+      "logo":                 "assets/svg/title/logo.svg",
+      "gallery_arrow_left":   "assets/svg/arrow_left.svg",
+      "gallery_arrow_right":  "assets/svg/arrow_right.svg"
+    },
+    "image":
+    {
+      "title" :
+      {
+        "title0": "assets/image/title/title.0000.png",
+        "title1": "assets/image/title/title.0001.png",
+        "title2": "assets/image/title/title.0002.png",
+        "title3": "assets/image/title/title.0003.png",
+        "title4": "assets/image/title/title.0004.png",
+        "title5": "assets/image/title/title.0005.png",
+        "title6": "assets/image/title/title.0006.png",
+        "title7": "assets/image/title/title.0007.png",
+        "title8": "assets/image/title/title.0008.png",
+        "title9": "assets/image/title/title.0009.png",
+        "title10": "assets/image/title/title.0010.png",
+        "title11": "assets/image/title/title.0011.png",
+        "title12": "assets/image/title/title.0012.png",
+        "title13": "assets/image/title/title.0013.png",
+        "title14": "assets/image/title/title.0014.png",
+        "title15": "assets/image/title/title.0015.png",
+        "title16": "assets/image/title/title.0016.png",
+        "title17": "assets/image/title/title.0017.png",
+        "title18": "assets/image/title/title.0018.png",
+        "title19": "assets/image/title/title.0019.png",
+        "title20": "assets/image/title/title.0020.png",
+        "title21": "assets/image/title/title.0021.png",
+        "title22": "assets/image/title/title.0022.png",
+        "title23": "assets/image/title/title.0023.png",
+        "title24": "assets/image/title/title.0024.png"
+      },
+      "preview_bar":   "assets/image/preview/preview_bar.jpg",
+      "preview_harem": "assets/image/preview/preview_harem.jpg",
+      "preview_drug":  "assets/image/preview/preview_drug.jpg"
+    }
+  },
+
+  "gm_bar":
+  {
+    "audio":
+    {
+      "jingle": "assets/music/jingle.ogg"
+    },
+    "svg": 
+    {
+      "env_0": "assets/svg/gm_bar/env_0.svg",
+      "env_1": "assets/svg/gm_bar/env_1.svg",
+      "env_2": "assets/svg/gm_bar/env_2.svg",
+      "env_3": "assets/svg/gm_bar/env_3.svg",
+      "env_4": "assets/svg/gm_bar/env_4.svg",
+      "env_5": "assets/svg/gm_bar/env_5.svg",
+      "env_6": "assets/svg/gm_bar/env_6.svg",
+      "itm_0": "assets/svg/gm_bar/item_0.svg",
+      "itm_1": "assets/svg/gm_bar/item_1.svg",
+      "itm_2": "assets/svg/gm_bar/item_2.svg",
+      "itm_3": "assets/svg/gm_bar/item_3.svg",
+      "itm_4": "assets/svg/gm_bar/item_4.svg",
+      "itm_5": "assets/svg/gm_bar/item_5.svg",
+      "jim":   "assets/svg/gm_bar/jim.svg",
+      "scarlet": "assets/svg/gm_bar/scarlet.svg",
+      "kora_dialog": "assets/svg/gm_bar/kora_dialog.svg"
+    },
+    "image":
+    {
+      "gm_back": "assets/image/gm_bar/bar.png",
+      "sara": "assets/image/gm_bar/sara.png",
+      "kora_dialog_back": "assets/image/gm_bar/kora_dialog.png",
+
+      "nurse_c0": "assets/image/gm_bar/sprite/nurse/c/nurse.0000.png",
+      "nurse_c1": "assets/image/gm_bar/sprite/nurse/c/nurse.0001.png",
+      "nurse_c2": "assets/image/gm_bar/sprite/nurse/c/nurse.0002.png",
+      "nurse_c3": "assets/image/gm_bar/sprite/nurse/c/nurse.0003.png",
+      "nurse_c4": "assets/image/gm_bar/sprite/nurse/c/nurse.0004.png",
+      "nurse_c5": "assets/image/gm_bar/sprite/nurse/c/nurse.0005.png",
+      "nurse_c6": "assets/image/gm_bar/sprite/nurse/c/nurse.0006.png",
+      "nurse_c7": "assets/image/gm_bar/sprite/nurse/c/nurse.0007.png",
+      "nurse_c8": "assets/image/gm_bar/sprite/nurse/c/nurse.0008.png",
+      "nurse_c9": "assets/image/gm_bar/sprite/nurse/c/nurse.0009.png",
+      "nurse_c10": "assets/image/gm_bar/sprite/nurse/c/nurse.0010.png",
+      "nurse_c11": "assets/image/gm_bar/sprite/nurse/c/nurse.0011.png",
+      "nurse_c12": "assets/image/gm_bar/sprite/nurse/c/nurse.0012.png",
+      "nurse_c13": "assets/image/gm_bar/sprite/nurse/c/nurse.0013.png",
+      "nurse_c14": "assets/image/gm_bar/sprite/nurse/c/nurse.0014.png",
+      "nurse_c15": "assets/image/gm_bar/sprite/nurse/c/nurse.0015.png",
+      "nurse_c16": "assets/image/gm_bar/sprite/nurse/c/nurse.0016.png",
+      "nurse_c17": "assets/image/gm_bar/sprite/nurse/c/nurse.0017.png",
+      "nurse_c18": "assets/image/gm_bar/sprite/nurse/c/nurse.0018.png",
+      "nurse_c19": "assets/image/gm_bar/sprite/nurse/c/nurse.0019.png",
+      "nurse_c20": "assets/image/gm_bar/sprite/nurse/c/nurse.0020.png",
+      "nurse_c21": "assets/image/gm_bar/sprite/nurse/c/nurse.0021.png",
+      "nurse_c22": "assets/image/gm_bar/sprite/nurse/c/nurse.0022.png",
+      "nurse_c23": "assets/image/gm_bar/sprite/nurse/c/nurse.0023.png",
+      "nurse_c24": "assets/image/gm_bar/sprite/nurse/c/nurse.0024.png",
+      "nurse_c25": "assets/image/gm_bar/sprite/nurse/c/nurse.0025.png",
+      "nurse_c26": "assets/image/gm_bar/sprite/nurse/c/nurse.0026.png",
+      "nurse_c27": "assets/image/gm_bar/sprite/nurse/c/nurse.0027.png",
+      "nurse_c28": "assets/image/gm_bar/sprite/nurse/c/nurse.0028.png",
+      "nurse_c29": "assets/image/gm_bar/sprite/nurse/c/nurse.0029.png"
+    },
+    "spritesheet":
+    {
+      "talk_right":
+      {
+        "path": "assets/spritesheet/talk_right.png",
+        "frameWidth": 152.5000,
+        "frameHeight": 294
+      },
+      "talk_left":
+      {
+        "path": "assets/spritesheet/talk_left.png",
+        "frameWidth": 152.9700,
+        "frameHeight": 294
+      },
+      "walk_right":
+      {
+        "path": "assets/spritesheet/walk_right.png",
+        "frameWidth": 278.50000,
+        "frameHeight": 281
+      },
+      "walk_left":
+      {
+        "path": "assets/spritesheet/walk_left.png",
+        "frameWidth": 277.87,
+        "frameHeight": 281
+      }
+    }
+  },
+
+  "gm_harem":
+  {
+    "audio":
+    {
+
+    },
+
+    "svg":
+    {
+      "magnolia":   "assets/svg/gm_harem/magnolia.svg",
+      "tiger":      "assets/svg/gm_harem/tiger.svg",
+      "harem_back":    "assets/svg/gm_harem/background.svg",
+      "magnolia_dialog": "assets/svg/gm_harem/magnolia_dialog.svg",
+      "harem_env_0":    "assets/svg/gm_harem/env_0.svg",
+      "harem_env_1":      "assets/svg/gm_harem/env_1.svg"
+    },
+    
+    "image":
+    {
+      "magnolia_dialog_back": "assets/image/gm_harem/magnolia_dialog.png"
+    },
+
+    "spritesheet":
+    {
+    }
+  },
+
+  "gm_drug":
+  {
+    "audio":
+    {
+    },
+
+    "svg":
+    {
+    },
+    
+    "image":
+    {
+      "spratz_dialog_back": "assets/image/gm_drug/spratz_dialog_background.png",
+      "spratz_dialog":      "assets/image/gm_drug/spratz_dialog.png",
+      "background":         "assets/image/gm_drug/background.png",
+      "spratz":             "assets/image/gm_drug/spratz.png"
+    },
+
+    "spritesheet":
+    {
+    }
+  },
+
+  "hud":
+  {
+    "image":
+    {
+      "item_8ball":     "assets/image/hud/8ball_item.png",
+      "item_banana":    "assets/image/hud/banana_item.png",
+      "gym":            "assets/image/hud/gym_item.png",
+      "item_amaro":     "assets/image/hud/amaro_item.png",
+      "arrow_left":     "assets/image/hud/arrow_left.png",
+      "arrow_right":    "assets/image/hud/arrow_right.png",
+      "item_beer":      "assets/image/hud/beer_item.png",
+      "item_scissors":  "assets/image/hud/scissors_item.png",
+      "hand":           "assets/image/hud/hand_item.png",
+      "money":          "assets/image/hud/money_item.png",
+      "ibm":            "assets/image/hud/ibm_item.png"
+    },
+    
+    "svg":
+    {
+      "folders":        "assets/svg/hud/folders.svg"
+    }
+  },
+
+  "player":
+  {
+    "spritesheet":
+    {
+      "talk_right":
+      {
+        "path": "assets/spritesheet/talk_right.png",
+        "frameWidth": 152.5000,
+        "frameHeight": 294
+      },
+      "talk_left":
+      {
+        "path": "assets/spritesheet/talk_left.png",
+        "frameWidth": 152.9700,
+        "frameHeight": 294
+      },
+      "walk_right":
+      {
+        "path": "assets/spritesheet/walk_right.png",
+        "frameWidth": 278.50000,
+        "frameHeight": 281
+      },
+      "walk_left":
+      {
+        "path": "assets/spritesheet/walk_left.png",
+        "frameWidth": 277.87,
+        "frameHeight": 281
+      }
+    }
+  }
+}

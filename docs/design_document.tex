@@ -1,0 +1,52 @@
+\documentclass[11pt]{article}
+% import dependency %
+\usepackage{graphicx}
+\usepackage{background}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\graphicspath{ {/home/fedus/johnnyadventure/docs/img} }
+
+% title %
+\title{
+	\includegraphics[scale = 0.25]{img/italy_flag.png}\\
+	\textbf{Johnny Adventure}}
+\author{\textbf{Design Document}}
+\date{\today}
+
+% custom template setup % 
+\backgroundsetup
+{
+	scale = 1, 
+	angle = 0,
+	opacity = 0.2, 
+	contents =
+	{
+		\includegraphics[
+			width=0.5\paperwidth,
+			height=0.5\paperheight,
+			keepaspectratio
+		] {img/background.png}
+	}
+}
+
+\begin{document}
+\maketitle
+
+\section{Introduzione}
+Johnny Adventure e' un videogioco d'avventura punta e clicca in grafica cartoon 2D.
+Rifacendosi ai giochi d'avventura grafica dell'era DOS e all'animazione classica, propone un'esperienza originale d'intrattenimento umoristica a tratti birbante, completamente volto al buonumore.  
+La vicenda ha come protagonista Johnny Lovelace, un ottuso minuto aspirante \emph{Latin Lover} che in seguito ad una serie di peripezie, si ritrova a vivere una \emph{semi detective-story} sulla propria pelle.
+Inarrestabile sognatore ed eterno perdente, Johnny vedra' proprio in questa \emph{breve ma intensa} storia finalmente quel qualcosa che ha sempre cercato per poter spiccare il volo e coronare i suoi sogni.
+\emph{Ma non sempre le cose stanno come sembrano a Johnny!}
+         
+\section{Il Videogioco}
+Johnny Adventure e' un breve videogioco Html5, pensato per essere giocabile e usufruibile il piu' possibile da tutti. Sulla falsa riga dei giochi Flash, e' pensato per essere facilmente pacchettizabile ed eventualmente diffondibile tramite i canali infiniti della rete. Il videogioco e' stato realizzato completamente con Software Open Source, dalla grafica al game engine. Il codice sorgente e' destinato ad essere disponibile al pubblico, accessibile adesso nella seguente repository \url{https://gitlab.com/EnricoRuggiano/johnnyadventure}.
+
+\section{Lo Scopo di Johnny Adventure}
+Johnny Adventure non si pone particolari obiettivi per adesso. Si propone piu' come un progetto personale misto a piano d'azione in evoluzione. E' un grande contenitore di idee e riflessioni. 
+Le riflessioni che ha dentro di se' sono le piu' disperate, da quelle sociali a quelle professionali, da quelle del mondo informatico al mondo dei media, da riflessioni etiche ad artistiche.
+E' da intendere tuttavia che tutte queste riflessioni non prendono mai la forma di critica fine a se stessa o impositiva, ma sono riflessioni propositive che con tutta la loro buona volonta' vengono lasciate trasparire al pubblico, qualora ne fosse interessato.
+
+Per questo motivo Johnny Adventure avra', e sara' il primo software della storia, ad avere un Manifesto; una specie di nota dell'autore in cui verranno indicate tutte le tematiche di fondo e le riflessioni che alimentano Johnny Adventure
+ 
+\end{document}

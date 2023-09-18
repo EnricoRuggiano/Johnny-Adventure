@@ -1,0 +1,135 @@
+{
+  "title": {
+    "btn_tle": {
+      "ENG": "JOHNNY ADVENTURE",
+      "ITA": "JOHNNY ADVENTURE"
+    },
+    "btn_str": {
+      "ENG": "New Game",
+      "ITA": "Nuova Partita"
+    },
+    "btn_lod": {
+      "ENG": "Load Game",
+      "ITA": "Carica Partita"
+    },
+    "btn_mnf": {
+      "ENG": "Manifest",
+      "ITA": "Manifesto"
+    },
+    "btn_opt": {
+      "ENG": "Settings",
+      "ITA": "Opzioni"
+    },
+    "btn_shw": {
+      "ENG": "Gallery",
+      "ITA": "Galleria"
+    },
+    "btn_opt0": {
+      "ENG": "Language:",
+      "ITA": "Lingua:"
+    },
+    "btn_opt1": {
+      "ENG": "English",
+      "ITA": "Italiano"
+    },
+    "btn_opt2": {
+      "ENG": "Go Back",
+      "ITA": "Indietro"
+    }
+  },
+
+  "manifest":{
+    "manifest": {
+      "ENG":
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Integer placerat, mauris consequat placerat condimentum, nibh augue interdum orci, a fringilla ipsum massa vel felis.\n Praesent blandit malesuada eros, hendrerit maximus sapien sollicitudin eget.\n Nam viverra rhoncus massa quis posuere.\n Aenean erat mauris, tempus eget volutpat id, pharetra consequat enim.\n Donec ut semper dui, sit amet aliquet quam.\n Proin facilisis, nulla vel gravida tempor, justo arcu scelerisque nibh, ut euismod lorem nulla non neque.\n In magna leo, molestie in semper id, consectetur eu nisl.\n Cras dui urna, finibus nec orci nec, facilisis finibus augue.\n Quisque finibus diam ligula, id gravida libero molestie in.\n Aliquam vel risus nunc.\n Duis porta ornare pharetra.\n Integer feugiat pulvinar commodo.\n Praesent at est quis dolor vestibulum eleifend.\n Sed interdum fermentum nisl, et pretium ante molestie vitae.\n Nullam in ligula lacinia, aliquam tortor quis, tristique tellus.\n Aliquam sem lectus, convallis a rhoncus a, maximus id urna.\nPhasellus dolor nunc, commodo ut egestas id, molestie sed nisl.\n In scelerisque arcu ante, non condimentum massa volutpat sit amet.\n Suspendisse ipsum lacus, molestie ac viverra at, scelerisque non felis.\n Nunc ultrices venenatis urna molestie iaculis.\n Proin dapibus ut nunc at laoreet.\n Nunc purus est, porta eget sollicitudin vitae, dapibus sit amet orci.\n Etiam pharetra pretium lacus, malesuada auctor risus ornare non.\n Nulla facilisi.\n Fusce pulvinar mattis quam nec bibendum.\n Vivamus at dolor sed velit congue vestibulum eget ut quam.\n Maecenas at suscipit nibh, id gravida urna.\n Quisque congue euismod elit et feugiat.\n Aliquam in porta odio.\n Sed ut orci neque.\n Cras et malesuada felis.\n Quisque gravida ex sem, ac consequat felis dictum eget.\n ",
+      "ITA":
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Integer placerat, mauris consequat placerat condimentum, nibh augue interdum orci, a fringilla ipsum massa vel felis.\n Praesent blandit malesuada eros, hendrerit maximus sapien sollicitudin eget.\n Nam viverra rhoncus massa quis posuere.\n Aenean erat mauris, tempus eget volutpat id, pharetra consequat enim.\n Donec ut semper dui, sit amet aliquet quam.\n Proin facilisis, nulla vel gravida tempor, justo arcu scelerisque nibh, ut euismod lorem nulla non neque.\n In magna leo, molestie in semper id, consectetur eu nisl.\n Cras dui urna, finibus nec orci nec, facilisis finibus augue.\n Quisque finibus diam ligula, id gravida libero molestie in.\n Aliquam vel risus nunc.\n Duis porta ornare pharetra.\n Integer feugiat pulvinar commodo.\n Praesent at est quis dolor vestibulum eleifend.\n Sed interdum fermentum nisl, et pretium ante molestie vitae.\n Nullam in ligula lacinia, aliquam tortor quis, tristique tellus.\n Aliquam sem lectus, convallis a rhoncus a, maximus id urna.\n"    }
+  },
+
+  "hud": {
+    "button": {
+      "ENG": "Items",
+      "ITA": "Oggetti"
+    },
+    "hand": {
+      "ENG": "Take",
+      "ITA": "Prendere"
+    },
+    "money": {
+      "ENG": "Cash",
+      "ITA": "Spiccioli"
+    },
+    "ibm": {
+      "ENG": "Floppy Disk",
+      "ITA": "Floppy Disk"
+    },
+    "gym": {
+      "ENG": "Dumbbell",
+      "ITA": "Pesi"
+    },
+    "use": {
+      "ENG": "Use",
+      "ITA": "Usa"
+    },
+    "with": {
+      "ENG": "with",
+      "ITA": "con"
+    }
+  },
+
+  "gm_bar": {
+    "env_0": {
+      "ENG": "Neon Bar Sign",
+      "ITA": "Insegna al Neon"
+    },
+    "zon_0":{
+      "ENG": "Plant",
+      "ITA": "Pianta"
+    },
+    "zon_1":{
+      "ENG": "Jukebox",
+      "ITA": "Jukebox"
+    },
+    "zon_2":{
+      "ENG": "Electric Socket",
+      "ITA": "Presa della Corrente"
+    },
+    "zon_3":{
+      "ENG": "Vhs",
+      "ITA": "Vhs"
+    },
+    "zon_4":{
+      "ENG": "Cock",
+      "ITA": "Gallo"
+    },
+    "zon_5":{
+      "ENG": "Beer Tank",
+      "ITA": "Cisterna di Birra"
+    },
+    "zon_6":{
+      "ENG": "Heel shoe",
+      "ITA": "Scarpetta"
+    },
+    "zon_7":{
+      "ENG": "Cash Desk",
+      "ITA": "Cassa"
+    },
+    "zon_8":{
+      "ENG": "Bra",
+      "ITA": "Reggiseno"
+    },
+    "zon_9":{
+      "ENG": "Dancing Stage",
+      "ITA": "Palco"
+    },
+    "zon_10":{
+      "ENG": "Employeers Rankings",
+      "ITA": "Top Impiegati"
+    },
+    "zon_11":{
+      "ENG": "Alcohol",
+      "ITA": "Alcolici"
+    }
+  },
+  "mn_room": {}
+}
